@@ -485,6 +485,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Author     : Korisnik
 */
 footer {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
   padding: 30px 0;
   background-color: #660066;
 }
@@ -506,7 +508,7 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover, footer nav ul li a.active {
-  color: #3399ff;
+  color: #008000;
 }
 
 footer p {
@@ -515,17 +517,14 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  footer nav {
-    display: flex;
-    justify-content: space-around;
-  }
   footer nav ul {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   footer nav ul li a {
     color: #ffad33;
-    padding: 5px;
+    padding: 5px 10px;
   }
 }
 

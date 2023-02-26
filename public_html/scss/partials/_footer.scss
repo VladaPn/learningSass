@@ -1,8 +1,11 @@
 $footer-bg:$purple;
 $footer-text:$white;
 $footer-link-color:$orange;
-$footer-link-hover:$blue;
+$footer-link-hover:$green;
+$footer-font:$josefin;
 footer{
+    font-family: $footer-font;
+    font-weight: $font-bold;
     padding: 30px 0;
     background-color: $footer-bg;
     nav{
@@ -32,15 +35,15 @@ footer{
 }
 @media(min-width:768px){
    footer{ 
-    nav{     display: flex;
-             justify-content: space-around;
+    nav{     
         ul{
             display: flex;
+            justify-content: center;
             align-items: center;
             li{
                 a{
                     color: $footer-link-color; 
-                    padding: 5px;
+                    padding: 5px 10px;
                 }
             }
         }
