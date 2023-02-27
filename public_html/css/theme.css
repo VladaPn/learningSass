@@ -11,8 +11,12 @@ font-family: 'Rubik', sans-serif;  */
 }
 
 .btn-default {
-  background-color: #444444;
+  background-color: rgba(68, 68, 68, 0.8);
   color: #ffffff;
+}
+
+.btn-default:hover {
+  background-color: #111111;
 }
 
 .btn-danger {
@@ -20,9 +24,17 @@ font-family: 'Rubik', sans-serif;  */
   color: #ffffff;
 }
 
+.btn-danger:hover {
+  background-color: #801a00;
+}
+
 .btn-success {
   background-color: #008000;
   color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #001a00;
 }
 
 .btn-warning {
@@ -30,14 +42,26 @@ font-family: 'Rubik', sans-serif;  */
   color: #ffffff;
 }
 
+.btn-warning:hover {
+  background-color: #cc7a00;
+}
+
 .btn-wow {
   background-color: #ffff33;
   color: #000000;
 }
 
+.btn-wow:hover {
+  background-color: #cccc00;
+}
+
 .btn-dark {
   background-color: #000000;
   color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #333333;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -446,7 +470,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover, header nav ul li a.active {
-  color: #008000;
+  color: #00cc00;
 }
 
 /*header a{
@@ -542,7 +566,7 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover, footer nav ul li a.active {
-  color: #008000;
+  color: #00cc00;
 }
 
 footer p {

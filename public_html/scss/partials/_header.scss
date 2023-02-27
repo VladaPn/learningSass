@@ -25,7 +25,7 @@ header{
                     text-transform: uppercase;
                     font-weight: $font-bold;
                     &:hover,&.active{
-                        color: $nav-link-hover;
+                        color: lighten(complement($header-bg),20%);
                     }
                 }
                 

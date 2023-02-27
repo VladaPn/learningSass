@@ -21,7 +21,7 @@ footer{
                     padding: 5px 0;
                     text-align: center;
                     &:hover, &.active{
-                        color: $footer-link-hover;
+                        color: lighten(complement($footer-bg),20%);
                     }
                 }
             }
