@@ -1,10 +1,11 @@
 $thead-text-color:$white;
 $thead-bg-color:$purple;
-$even-bg:$light-gray;
+$even-bg:$white;
 $thead-border:$white;
 $table-border:$black;
+$odd-bg:$light-gray;
 .course-section{
-    padding: 100px 0;
+   @include styleSection(30px, 30px, transparent);
     table{
         caption{         
         text-align: left;
@@ -29,6 +30,9 @@ $table-border:$black;
         tbody{
             tr{
                 &:nth-child(odd){
+                    background-color: $odd-bg;
+                }
+                &:nth-child(even){
                     background-color: $even-bg;
                 }
                 &:hover{

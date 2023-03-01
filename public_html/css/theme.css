@@ -6,7 +6,7 @@ font-family: 'Rubik', sans-serif;  */
   display: inline-block;
   padding: 10px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px 50% 5px 50%;
   cursor: pointer;
 }
 
@@ -442,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  padding: 20px 0;
+  padding: 20px 0px 20px 0px;
   background-color: #660066;
 }
 
@@ -504,30 +504,36 @@ header nav ul li a:hover, header nav ul li a.active {
   }
 }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Feb 25, 2023, 5:14:25 PM
-    Author     : Korisnik
-*/
+.home-section {
+  padding: 50px 0px 50px 0px;
+  background-color: #ffffff;
+}
+
 .about-section {
-  padding: 30px 0;
+  padding: 30px 0px 30px 0px;
   background-color: #ffffff;
 }
 
 .service-section {
-  padding: 30px 0;
+  padding: 30px 0px 30px 0px;
+  background-color: transparent;
 }
 
 .comment-section {
-  padding: 30px 0;
+  padding: 30px 0px 30px 0px;
   background-color: #ffffff;
 }
 
+.comment-section .comment-img img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 .course-section {
-  padding: 100px 0;
+  padding: 30px 0px 30px 0px;
+  background-color: transparent;
 }
 
 .course-section table {
@@ -559,22 +565,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   background-color: #eeeeee;
 }
 
-.course-section table tbody tr:hover {
-  background-color: #d5d5d5;
+.course-section table tbody tr:nth-child(even) {
+  background-color: #ffffff;
 }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Feb 25, 2023, 5:17:27 PM
-    Author     : Korisnik
-*/
+.course-section table tbody tr:hover {
+  background-color: #e6e6e6;
+}
+
+.contact-section {
+  padding: 150px 0px 150px 0px;
+  background-color: #ffffff;
+}
+
 footer {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  padding: 30px 0;
+  padding: 30px 0px 30px 0px;
   background-color: #660066;
 }
 
