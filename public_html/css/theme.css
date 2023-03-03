@@ -562,6 +562,10 @@ header nav ul li a:hover, header nav ul li a.active {
 .home-section {
   padding: 50px 0px 50px 0px;
   background-color: #ffffff;
+  background-image: url(../img/home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .about-section {
