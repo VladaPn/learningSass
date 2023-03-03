@@ -1,10 +1,19 @@
-$btn-default:$dark-gray;
+/*$btn-default:$dark-gray;
 $btn-text-color:$white;
 $btn-danger:$red;
 $btn-success:$green;
 $btn-warning:$orange;
 $btn-wow:$yellow;
-$btn-dark:$black;
+$btn-dark:$black;*/
+
+$btn-colection:(
+'default':$dark-gray,
+'danger':$red,
+'success':$green,
+'warning':$orange,
+'wow':$yellow,
+'dark':$black
+);
 %btn{
     display: inline-block;
     padding:10px 25px;
@@ -12,7 +21,20 @@ $btn-dark:$black;
     @include customRadius(5px,50%,5px,50%);
     cursor: pointer;
 }
-.btn-default{
+@each $key, $value in $btn-colection{
+    
+    .btn-#{$key}{
+        
+        @extend %btn;
+        background-color: $value;
+        color: colorYiq($value);
+        
+        &:hover{
+            background-color: darken($value, 10%);
+        }
+    }   
+}
+/*.btn-default{
     @extend %btn;
     background-color: rgba($btn-default,0.8);
     color: colorYiq($btn-default);
@@ -59,4 +81,4 @@ $btn-dark:$black;
     &:hover{
         background-color: lighten($btn-dark, 20%);
     }
-}
+}*/
