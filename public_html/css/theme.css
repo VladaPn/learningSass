@@ -583,11 +583,35 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: #ffffff;
 }
 
+.comment-section .comment-item {
+  display: flex;
+  align-items: center;
+}
+
+.comment-section .comment-item .comment-body {
+  padding: 0 20px;
+}
+
+.comment-section .comment-item .comment-body .comment-title:first-of-type {
+  margin-top: 0;
+}
+
+.comment-section .comment-img {
+  flex: 0 0 70px;
+}
+
 .comment-section .comment-img img {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
+  flex: 0 0 50px;
+}
+
+@media (min-width: 768px) {
+  .comment-section .comment-img {
+    flex: 0 0 90px;
+  }
 }
 
 .course-section {
@@ -633,8 +657,38 @@ header nav ul li a:hover, header nav ul li a.active {
 }
 
 .contact-section {
+  background: url(../img/contact.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 150px 0px 150px 0px;
   background-color: #ffffff;
+}
+
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-section .contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-section .contact-form .form-group label {
+  display: block;
+  padding-left: 4px;
+}
+
+.contact-section .contact-form .form-group .form-control {
+  width: 100%;
+  line-height: 3rem;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #000000;
 }
 
 footer {
